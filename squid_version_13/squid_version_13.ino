@@ -1,13 +1,13 @@
 #include <EEPROM.h>
 
-  /* Done
+/* Done
  TODO: move water sensor to C5
  TODO: move charge sensor to C4
  TODO: move light change output to C3
  TODO: have lure flash its color when removed from charger
-  TODO: reset lure when removed from charger?
+ TODO: reset lure when removed from charger?
  TODO: put water sensor in schematic
-
+ 
  */
 
 /*
@@ -34,6 +34,8 @@ volatile unsigned int counter = 0;
 
 volatile int in_water = 0;
 
+// when this function is called, it is basically a tick. Decide what changes
+// are to be executed.
 ISR(WDT_vect)
 {
   counter++;
@@ -88,7 +90,8 @@ void setup()
   //delay(100); //Allow for serial print to complete.
 
   DDRB=31; // 0 through 4
-  DDRD=31; // 0 through 4
+  //DDRD=31; // 0 through 4
+  DDRD=0xFF; // pins 0 through 5
   DDRC = 1+2+4+8; // tail lights + color selector
 
   //C5 is water sensor
@@ -123,7 +126,7 @@ void setup()
   sei();
 
   segment = 0;
-  
+
   char value = EEPROM.read(0);
   if (value == 'R')
   {
@@ -138,17 +141,17 @@ void setup()
     EEPROM.write(0, 'R');
     PORTC &= ~(1<<3);
   }
-  
+
   //toggle color that will turn on 3 times
-    for(int i=0; i<3; i++)
-    {
-      PORTD=1;
-      for(int j=0; j<10000; j++)
-        __asm__("nop\n\t");
-      PORTD=0;
-      for(int j=0; j<10000; j++)
-        __asm__("nop\n\t");
-    }
+  for(int i=0; i<3; i++)
+  {
+    PORTD=1;
+    for(int j=0; j<10000; j++)
+      __asm__("nop\n\t");
+    PORTD=0;
+    for(int j=0; j<10000; j++)
+      __asm__("nop\n\t");
+  }
 }
 
 boolean light_on = true;
@@ -161,8 +164,26 @@ void loop()
   {
     PORTB = 1<<segment;
     PORTD = 1<<segment;
-    PORTC &= ~7;
-    PORTC |= 1<<(tail/2);
+    PORTC &= ~7; // blank out PORTC which is all the tail lights
+    PORTC |= 1<<(tail/2); //why am I doing it this way!!
+
+    int x = tail/2; 
+    set x to represent the tail light which should be turned on
+      PORTD &= ~(224) // turn off top three bits, which contain yellow lights
+      switch(x)
+      {
+      case 0:
+        PORTD |= 1<<5;
+        break;
+      case 1:
+        PORTD |= 1<<6;
+        break;
+      case 2:
+        PORTD |= 1<<7;
+        break; 
+      }
+
+
   }
   else // turn off all lights
   {
@@ -173,6 +194,8 @@ void loop()
 
   enterSleep(); 
 }
+
+
 
 
 
