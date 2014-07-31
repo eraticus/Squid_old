@@ -164,22 +164,25 @@ void loop()
   {
     PORTB = 1<<segment;
     PORTD = 1<<segment;
-    PORTC &= ~7; // blank out PORTC which is all the tail lights
-    PORTC |= 1<<(tail/2); //why am I doing it this way!!
+    //PORTC &= ~7; // blank out PORTC which is all the tail lights
+    //PORTC |= 1<<(tail/2); //why am I doing it this way!!
 
-    int x = tail/2; 
-    set x to represent the tail light which should be turned on
-      PORTD &= ~(224) // turn off top three bits, which contain yellow lights
+    int x = tail/2; //set x to represent the tail light which should be turned on
+      PORTD &= ~(224); // turn off top three bits, which are connected to the red tail lights
+      PORTC &= ~(7); // turn off top three bits, which are connected to the green tail lights
       switch(x)
       {
       case 0:
         PORTD |= 1<<5;
+        PORTC |= 1<<0;
         break;
       case 1:
         PORTD |= 1<<6;
+        PORTC |= 1<<1;
         break;
       case 2:
         PORTD |= 1<<7;
+        PORTC |= 1<<2;
         break; 
       }
 
