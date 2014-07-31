@@ -4711,6 +4711,9 @@ disable ADC</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
 <wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
+<wire x1="246.38" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
+<junction x="254" y="167.64"/>
 </segment>
 </net>
 </nets>

@@ -3910,7 +3910,7 @@ disable ADC</text>
 <instance part="TAIL_RED_2" gate="G$1" x="386.08" y="104.14" rot="R90"/>
 <instance part="TAIL_RED_0" gate="G$1" x="386.08" y="124.46" rot="R90"/>
 <instance part="CENTER_BOTTOM" gate="G$1" x="254" y="162.56" rot="R270"/>
-<instance part="CENTER_TOP" gate="G$1" x="248.92" y="167.64" rot="R180"/>
+<instance part="CENTER_TOP" gate="G$1" x="241.3" y="167.64" rot="R180"/>
 <instance part="INVERTER" gate="G$2" x="172.72" y="15.24"/>
 <instance part="INVERTER" gate="G$3" x="170.18" y="20.32"/>
 <instance part="GND11" gate="1" x="170.18" y="0"/>
@@ -4676,15 +4676,6 @@ disable ADC</text>
 <wire x1="269.24" y1="167.64" x2="271.78" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
-<wire x1="254" y1="167.64" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
-<junction x="254" y="167.64"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -4713,6 +4704,13 @@ disable ADC</text>
 <wire x1="142.24" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="175.26" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 <junction x="142.24" y="177.8"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
+<wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
