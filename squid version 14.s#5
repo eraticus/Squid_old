@@ -1001,12 +1001,12 @@ Digikey part PDV-P7002-ND</description>
 <hole x="0" y="0" drill="0.9906"/>
 <hole x="5.08" y="1.016" drill="0.9906"/>
 <hole x="5.08" y="-1.016" drill="0.9906"/>
-<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
 <polygon width="0.127" layer="41">
 <vertex x="0.635" y="0.381"/>
 <vertex x="0.762" y="0.381"/>
@@ -1186,59 +1186,6 @@ APA2106ZGC</description>
 <wire x1="-1" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="2.5" x2="-2.5" y2="1" width="0.127" layer="21"/>
 </package>
-<package name="XB-D">
-<description>CREE XLAMP XB-D LED footprint</description>
-<wire x1="-1.225" y1="1.225" x2="1.225" y2="1.225" width="0.127" layer="21"/>
-<wire x1="1.225" y1="1.225" x2="1.225" y2="-1.225" width="0.127" layer="21"/>
-<wire x1="1.225" y1="-1.225" x2="-1.225" y2="-1.225" width="0.127" layer="21"/>
-<wire x1="-1.225" y1="-1.225" x2="-1.225" y2="1.225" width="0.127" layer="21"/>
-<smd name="TP" x="0" y="0" dx="0.92" dy="2.34" layer="1" thermals="no"/>
-<smd name="C" x="-0.99" y="0" dx="0.36" dy="0.36" layer="1" thermals="no"/>
-<smd name="A" x="0.99" y="0" dx="0.36" dy="0.36" layer="1" thermals="no"/>
-<text x="2" y="0" size="1.27" layer="21" font="vector" align="center">+</text>
-<text x="0" y="1.75" size="0.6096" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-1.75" size="0.6096" layer="21" font="vector" align="center">&gt;VALUE</text>
-<polygon width="0" layer="1">
-<vertex x="-1.17" y="1.17"/>
-<vertex x="-0.81" y="1.17"/>
-<vertex x="-0.81" y="-1.17"/>
-<vertex x="-1.17" y="-1.17"/>
-<vertex x="-1.17" y="-0.18"/>
-<vertex x="-1.45" y="-0.18"/>
-<vertex x="-1.45" y="0.18"/>
-<vertex x="-1.17" y="0.18"/>
-</polygon>
-<polygon width="0.254" layer="29">
-<vertex x="-1.17" y="1.17"/>
-<vertex x="-0.81" y="1.17"/>
-<vertex x="-0.81" y="-1.17"/>
-<vertex x="-1.17" y="-1.17"/>
-<vertex x="-1.17" y="-0.18"/>
-<vertex x="-1.45" y="-0.18"/>
-<vertex x="-1.45" y="0.18"/>
-<vertex x="-1.17" y="0.18"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="0.81" y="1.17"/>
-<vertex x="0.81" y="-1.17"/>
-<vertex x="1.17" y="-1.17"/>
-<vertex x="1.17" y="-0.18"/>
-<vertex x="1.45" y="-0.18"/>
-<vertex x="1.45" y="0.18"/>
-<vertex x="1.17" y="0.18"/>
-<vertex x="1.17" y="1.17"/>
-</polygon>
-<polygon width="0.254" layer="29">
-<vertex x="0.81" y="1.17"/>
-<vertex x="0.81" y="-1.17"/>
-<vertex x="1.17" y="-1.17"/>
-<vertex x="1.17" y="-0.18"/>
-<vertex x="1.45" y="-0.18"/>
-<vertex x="1.45" y="0.18"/>
-<vertex x="1.17" y="0.18"/>
-<vertex x="1.17" y="1.17"/>
-</polygon>
-</package>
 <package name="SOT-23">
 <description>3-Lead Plastic Small Outline Transistor (NB) [SOT-23]
 from the Microchip Packaging Specification page 52</description>
@@ -1257,6 +1204,35 @@ from the Microchip Packaging Specification page 52</description>
 <text x="0.095" y="-2.675" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
 <circle x="-2" y="-1.1" radius="0.25" width="0.127" layer="21"/>
+</package>
+<package name="LED_CREE_XB-D">
+<description>CREE XLAMP XB-D LED footprint</description>
+<smd name="PAD" x="0" y="0" dx="0.92" dy="2.34" layer="1" thermals="no"/>
+<smd name="C" x="-0.98" y="0" dx="0.36" dy="2.34" layer="1" thermals="no"/>
+<smd name="A" x="0.98" y="0" dx="0.36" dy="2.34" layer="1" thermals="no"/>
+<text x="2.54" y="0" size="1.27" layer="51" font="vector" align="center">+</text>
+<text x="-2.54" y="0" size="1.27" layer="51" font="vector" align="center">-</text>
+<wire x1="-1.225" y1="1.225" x2="1.225" y2="1.225" width="0" layer="51"/>
+<wire x1="1.225" y1="1.225" x2="1.225" y2="-1.225" width="0" layer="51"/>
+<wire x1="1.225" y1="-1.225" x2="-1.225" y2="-1.225" width="0" layer="51"/>
+<wire x1="-1.225" y1="-1.225" x2="-1.225" y2="1.225" width="0" layer="51"/>
+<smd name="C2" x="-1.31" y="0" dx="0.3" dy="0.36" layer="1" thermals="no"/>
+<smd name="A2" x="1.31" y="0" dx="0.3" dy="0.36" layer="1" thermals="no"/>
+<rectangle x1="-1.3" y1="-0.1" x2="0" y2="0.1" layer="1"/>
+<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+</package>
+<package name="LED_CREE_XH-G">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<smd name="C" x="-0.65" y="0" dx="1.7" dy="3" layer="1" thermals="no"/>
+<smd name="A" x="1.1" y="0" dx="0.8" dy="3" layer="1" thermals="no"/>
+<smd name="C2" x="-1.625" y="0" dx="0.25" dy="0.33" layer="1" thermals="no" cream="no"/>
+<smd name="A2" x="1.625" y="0" dx="0.25" dy="0.33" layer="1" thermals="no" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -1557,7 +1533,7 @@ from the Microchip Packaging Specification page 52</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="KING_BRIGHT_APA2106SURCK_LED_PACKAGE">
+<device name="RA" package="KING_BRIGHT_APA2106SURCK_LED_PACKAGE">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -1575,10 +1551,19 @@ from the Microchip Packaging Specification page 52</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="CREE_XB-D" package="XB-D">
+<device name="XB-D" package="LED_CREE_XB-D">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C TP"/>
+<connect gate="G$1" pin="A" pad="A A2"/>
+<connect gate="G$1" pin="C" pad="C C2 PAD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="XH-G" package="LED_CREE_XH-G">
+<connects>
+<connect gate="G$1" pin="A" pad="A A2"/>
+<connect gate="G$1" pin="C" pad="C C2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3749,7 +3734,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
 <part name="B1" library="Keystone" deviceset="COIN_CELL_BATTERY" device="JST"/>
 <part name="U$6" library="ERIC" deviceset="VBAT" device=""/>
-<part name="U$7" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="U$8" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="U$10" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3809,16 +3793,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="30K"/>
 <part name="U$16" library="ERIC" deviceset="VBAT" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$13" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="CHARGE_BOTTOM" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="U$17" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="U$19" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LEFT1" library="ERIC" deviceset="MOSFET_N_DUAL" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="RCHARGE" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="300"/>
-<part name="U$9" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="PULLDOWN" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
+<part name="DIODE" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="0"/>
+<part name="U$3" library="ERIC" deviceset="VCHARGE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3871,7 +3855,6 @@ disable ADC</text>
 <attribute name="NAME" x="114.3" y="133.35" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="U$6" gate="G$1" x="106.68" y="142.24"/>
-<instance part="U$7" gate="G$1" x="30.48" y="147.32"/>
 <instance part="U$8" gate="G$1" x="15.24" y="96.52" rot="R270"/>
 <instance part="U$10" gate="G$1" x="30.48" y="96.52" rot="R270"/>
 <instance part="GND14" gate="1" x="30.48" y="104.14" rot="R180"/>
@@ -3925,7 +3908,7 @@ disable ADC</text>
 <instance part="TAIL_RED_2" gate="G$1" x="386.08" y="104.14" rot="R90"/>
 <instance part="TAIL_RED_0" gate="G$1" x="386.08" y="124.46" rot="R90"/>
 <instance part="CENTER_BOTTOM" gate="G$1" x="254" y="162.56" rot="R270"/>
-<instance part="CENTER_TOP" gate="G$1" x="248.92" y="167.64" rot="R180"/>
+<instance part="CENTER_TOP" gate="G$1" x="241.3" y="167.64" rot="R180"/>
 <instance part="INVERTER" gate="G$2" x="172.72" y="15.24"/>
 <instance part="INVERTER" gate="G$3" x="170.18" y="20.32"/>
 <instance part="GND11" gate="1" x="170.18" y="0"/>
@@ -3936,16 +3919,16 @@ disable ADC</text>
 <instance part="R2" gate="G$1" x="276.86" y="154.94" rot="R90"/>
 <instance part="U$16" gate="G$1" x="276.86" y="177.8"/>
 <instance part="GND10" gate="1" x="276.86" y="142.24"/>
-<instance part="U$13" gate="G$1" x="2.54" y="96.52" rot="R270"/>
+<instance part="CHARGE_BOTTOM" gate="G$1" x="2.54" y="96.52" rot="R270"/>
 <instance part="U$17" gate="G$1" x="40.64" y="96.52" rot="R270"/>
-<instance part="U$19" gate="G$1" x="2.54" y="101.6"/>
 <instance part="GND12" gate="1" x="40.64" y="104.14" rot="R180"/>
 <instance part="LEFT1" gate="G$1" x="147.32" y="180.34"/>
 <instance part="GND13" gate="1" x="149.86" y="172.72"/>
 <instance part="RCHARGE" gate="G$1" x="134.62" y="177.8"/>
-<instance part="U$9" gate="G$1" x="124.46" y="177.8"/>
 <instance part="PULLDOWN" gate="G$1" x="142.24" y="170.18" rot="R90"/>
 <instance part="GND16" gate="1" x="142.24" y="162.56"/>
+<instance part="DIODE" gate="G$1" x="35.56" y="160.02" rot="R90"/>
+<instance part="U$3" gate="G$1" x="35.56" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -4342,31 +4325,12 @@ disable ADC</text>
 </net>
 <net name="VCHARGE" class="0">
 <segment>
-<pinref part="CHARGE" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="147.32" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="147.32" x2="53.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="127" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
-<junction x="53.34" y="147.32"/>
-<pinref part="LED" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="162.56" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="VCHARGE"/>
-<junction x="30.48" y="147.32"/>
-<pinref part="U2" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
 <pinref part="U$8" gate="G$1" pin="P$1"/>
 <pinref part="U$11" gate="G$1" pin="VCHARGE"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="P$1"/>
-<pinref part="U$19" gate="G$1" pin="VCHARGE"/>
-</segment>
-<segment>
-<pinref part="RCHARGE" gate="G$1" pin="1"/>
-<pinref part="U$9" gate="G$1" pin="VCHARGE"/>
-<wire x1="124.46" y1="177.8" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="DIODE" gate="G$1" pin="2"/>
+<pinref part="U$3" gate="G$1" pin="VCHARGE"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -4691,15 +4655,6 @@ disable ADC</text>
 <wire x1="269.24" y1="167.64" x2="271.78" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
-<wire x1="254" y1="167.64" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
-<junction x="254" y="167.64"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -4728,6 +4683,38 @@ disable ADC</text>
 <wire x1="142.24" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="175.26" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 <junction x="142.24" y="177.8"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
+<wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
+<wire x1="246.38" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
+<junction x="254" y="167.64"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="RCHARGE" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="177.8" x2="50.8" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="147.32" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="147.32" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="147.32" x2="53.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="127" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
+<junction x="53.34" y="147.32"/>
+<pinref part="LED" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="162.56" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<pinref part="CHARGE" gate="G$1" pin="1"/>
+<pinref part="DIODE" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="154.94" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
+<junction x="35.56" y="147.32"/>
+<wire x1="50.8" y1="177.8" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
+<junction x="50.8" y="147.32"/>
 </segment>
 </net>
 </nets>
