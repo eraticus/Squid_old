@@ -3902,6 +3902,7 @@ disable ADC</text>
 <text x="281.94" y="175.26" size="1.778" layer="91">connect to water sensor port</text>
 <text x="109.22" y="190.5" size="1.778" layer="91">RESET LOW when charging</text>
 <text x="330.2" y="167.64" size="1.778" layer="94">Use a Resistor Array instead of discrete chips</text>
+<text x="-7.62" y="160.02" size="1.778" layer="94">Schottky diode or a jumper</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="43.18"/>

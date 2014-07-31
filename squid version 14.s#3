@@ -3901,6 +3901,7 @@ disable ADC</text>
 <text x="231.14" y="172.72" size="1.778" layer="91">connect to center brass tube</text>
 <text x="281.94" y="175.26" size="1.778" layer="91">connect to water sensor port</text>
 <text x="109.22" y="190.5" size="1.778" layer="91">RESET LOW when charging</text>
+<text x="330.2" y="167.64" size="1.778" layer="94">Use a Resistor Array instead of discrete chips</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="43.18"/>

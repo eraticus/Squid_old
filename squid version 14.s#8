@@ -3734,7 +3734,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
 <part name="B1" library="Keystone" deviceset="COIN_CELL_BATTERY" device="JST"/>
 <part name="U$6" library="ERIC" deviceset="VBAT" device=""/>
-<part name="U$7" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="U$8" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="U$10" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3804,6 +3803,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$9" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="PULLDOWN" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
+<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="diode"/>
+<part name="U$3" library="ERIC" deviceset="VCHARGE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3856,7 +3857,6 @@ disable ADC</text>
 <attribute name="NAME" x="114.3" y="133.35" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="U$6" gate="G$1" x="106.68" y="142.24"/>
-<instance part="U$7" gate="G$1" x="30.48" y="147.32"/>
 <instance part="U$8" gate="G$1" x="15.24" y="96.52" rot="R270"/>
 <instance part="U$10" gate="G$1" x="30.48" y="96.52" rot="R270"/>
 <instance part="GND14" gate="1" x="30.48" y="104.14" rot="R180"/>
@@ -3931,6 +3931,8 @@ disable ADC</text>
 <instance part="U$9" gate="G$1" x="124.46" y="177.8"/>
 <instance part="PULLDOWN" gate="G$1" x="142.24" y="170.18" rot="R90"/>
 <instance part="GND16" gate="1" x="142.24" y="162.56"/>
+<instance part="R3" gate="G$1" x="35.56" y="160.02" rot="R90"/>
+<instance part="U$3" gate="G$1" x="35.56" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -4327,20 +4329,6 @@ disable ADC</text>
 </net>
 <net name="VCHARGE" class="0">
 <segment>
-<pinref part="CHARGE" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="147.32" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="147.32" x2="53.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="127" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
-<junction x="53.34" y="147.32"/>
-<pinref part="LED" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="162.56" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="VCHARGE"/>
-<junction x="30.48" y="147.32"/>
-<pinref part="U2" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
 <pinref part="U$8" gate="G$1" pin="P$1"/>
 <pinref part="U$11" gate="G$1" pin="VCHARGE"/>
 </segment>
@@ -4352,6 +4340,10 @@ disable ADC</text>
 <pinref part="RCHARGE" gate="G$1" pin="1"/>
 <pinref part="U$9" gate="G$1" pin="VCHARGE"/>
 <wire x1="124.46" y1="177.8" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="U$3" gate="G$1" pin="VCHARGE"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -4714,6 +4706,23 @@ disable ADC</text>
 <pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
 <wire x1="246.38" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
 <junction x="254" y="167.64"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<wire x1="22.86" y1="147.32" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="147.32" x2="53.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="127" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
+<junction x="53.34" y="147.32"/>
+<pinref part="LED" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="162.56" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<pinref part="CHARGE" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="154.94" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
+<junction x="35.56" y="147.32"/>
 </segment>
 </net>
 </nets>
