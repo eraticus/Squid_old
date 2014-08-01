@@ -3902,6 +3902,7 @@ disable ADC</text>
 <text x="281.94" y="175.26" size="1.778" layer="91">connect to water sensor port</text>
 <text x="109.22" y="190.5" size="1.778" layer="91">RESET LOW when charging</text>
 <text x="330.2" y="167.64" size="1.778" layer="94">Use a Resistor Array instead of discrete chips</text>
+<text x="187.96" y="160.02" size="1.778" layer="94">unconnected. Only for physical support</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="43.18"/>
@@ -4713,9 +4714,6 @@ disable ADC</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
 <wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
-<wire x1="246.38" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-<junction x="254" y="167.64"/>
 </segment>
 </net>
 <net name="N$21" class="0">
