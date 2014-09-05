@@ -40,7 +40,7 @@ ISR(WDT_vect)
 {
   counter++;
 
-  if (!(counter%4))
+  if (!(counter%4)) // mod controls how fast this goes.
   {
     //segment++;
 
@@ -162,8 +162,8 @@ void loop()
 
   if (in_water)
   {
-    PORTB = 1<<segment;
-    PORTD = 1<<segment;
+    PORTB = 1<<(4-segment);
+    PORTD = 1<<(4-segment);
     //PORTC &= ~7; // blank out PORTC which is all the tail lights
     //PORTC |= 1<<(tail/2); //why am I doing it this way!!
 
