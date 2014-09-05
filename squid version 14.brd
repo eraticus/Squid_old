@@ -777,9 +777,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$7" library="ERIC" package="LED_KINGBRIGHT_BICOLOR_INDICATOR_LAMP" value="LED_RED_GREEN_CC" x="25.4" y="1.27" rot="MR90"/>
 <element name="CENTER" library="ERIC" package="LED_KINGBRIGHT_BICOLOR_INDICATOR_LAMP" value="LED_RED_GREEN_CC" x="17.78" y="1.27" rot="R90"/>
 <element name="U$13" library="ERIC" package="LED_KINGBRIGHT_BICOLOR_INDICATOR_LAMP" value="LED_RED_GREEN_CC" x="10.16" y="1.27" rot="MR90"/>
-<element name="GREEN_TAIL_1" library="SparkFun-Passives" package="0805" value="100" x="22.86" y="5.08" rot="R90"/>
-<element name="GREEN_TAIL_2" library="SparkFun-Passives" package="0805" value="100" x="20.32" y="5.08" rot="R90"/>
-<element name="GREEN_TAIL_3" library="SparkFun-Passives" package="0805" value="100" x="7.62" y="5.08" rot="R90"/>
+<element name="GREEN_TAIL_1" library="SparkFun-Passives" package="0805" value="43" x="22.86" y="5.08" rot="R90"/>
+<element name="GREEN_TAIL_2" library="SparkFun-Passives" package="0805" value="43" x="20.32" y="5.08" rot="R90"/>
+<element name="GREEN_TAIL_3" library="SparkFun-Passives" package="0805" value="43" x="7.62" y="5.08" rot="R90"/>
 <element name="RED_TAIL_1" library="SparkFun-Passives" package="0805" value="100" x="27.94" y="5.08" rot="R90"/>
 <element name="RED_TAIL_2" library="SparkFun-Passives" package="0805" value="100" x="15.24" y="5.08" rot="R90"/>
 <element name="RED_TAIL_3" library="SparkFun-Passives" package="0805" value="100" x="12.7" y="5.08" rot="R90"/>

@@ -3843,11 +3843,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="RIGHT_RED_3" library="ERIC" deviceset="LED" device="PLCC2"/>
 <part name="RIGHT_RED_4" library="ERIC" deviceset="LED" device="PLCC2"/>
 <part name="RIGHT_RED_0" library="ERIC" deviceset="LED" device="PLCC2"/>
-<part name="TAIL_MOSFETS" library="ERIC" deviceset="MOSFET_N_DUAL" device=""/>
-<part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="GREEN_TAIL" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
-<part name="RED_TAIL" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="CENTER_BOTTOM" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="CENTER_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device="" value=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
@@ -3972,12 +3967,6 @@ disable ADC</text>
 <instance part="RIGHT_RED_3" gate="G$1" x="307.34" y="93.98" rot="R90"/>
 <instance part="RIGHT_RED_4" gate="G$1" x="307.34" y="83.82" rot="R90"/>
 <instance part="RIGHT_RED_0" gate="G$1" x="307.34" y="124.46" rot="R90"/>
-<instance part="TAIL_MOSFETS" gate="G$1" x="363.22" y="50.8"/>
-<instance part="TAIL_MOSFETS" gate="G$2" x="391.16" y="50.8"/>
-<instance part="GND8" gate="1" x="365.76" y="43.18"/>
-<instance part="GND9" gate="1" x="393.7" y="43.18"/>
-<instance part="GREEN_TAIL" gate="G$1" x="365.76" y="60.96" rot="R90"/>
-<instance part="RED_TAIL" gate="G$1" x="393.7" y="60.96" rot="R90"/>
 <instance part="CENTER_BOTTOM" gate="G$1" x="254" y="162.56" rot="R270"/>
 <instance part="CENTER_TOP" gate="G$1" x="241.3" y="167.64" rot="R180"/>
 <instance part="INVERTER" gate="G$2" x="172.72" y="15.24"/>
@@ -4083,14 +4072,6 @@ disable ADC</text>
 <segment>
 <pinref part="RIGHT" gate="G$2" pin="S"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="TAIL_MOSFETS" gate="G$1" pin="S"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="TAIL_MOSFETS" gate="G$2" pin="S"/>
-<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="P$1"/>
@@ -4623,9 +4604,6 @@ disable ADC</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="383.54" y1="25.4" x2="383.54" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="TAIL_MOSFETS" gate="G$2" pin="G"/>
-<wire x1="383.54" y1="48.26" x2="388.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="INVERTER" gate="G$1" pin="Y"/>
 <wire x1="208.28" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="25.4" x2="304.8" y2="25.4" width="0.1524" layer="91"/>
@@ -4636,15 +4614,10 @@ disable ADC</text>
 <wire x1="215.9" y1="45.72" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="45.72" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
 <junction x="210.82" y="25.4"/>
-<wire x1="383.54" y1="25.4" x2="304.8" y2="25.4" width="0.1524" layer="91"/>
-<junction x="304.8" y="25.4"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="355.6" y1="35.56" x2="355.6" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="TAIL_MOSFETS" gate="G$1" pin="G"/>
-<wire x1="355.6" y1="48.26" x2="360.68" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="INVERTER" gate="G$1" pin="A"/>
 <pinref part="LEFT" gate="G$1" pin="G"/>
 <wire x1="187.96" y1="45.72" x2="187.96" y2="35.56" width="0.1524" layer="91"/>
@@ -4654,38 +4627,17 @@ disable ADC</text>
 <wire x1="276.86" y1="35.56" x2="276.86" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="RIGHT" gate="G$1" pin="G"/>
 <wire x1="276.86" y1="48.26" x2="281.94" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="35.56" x2="276.86" y2="35.56" width="0.1524" layer="91"/>
-<junction x="276.86" y="35.56"/>
 <pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
 <wire x1="101.6" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="60.96" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="35.56" x2="187.96" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="TAIL_MOSFETS" gate="G$1" pin="D"/>
-<pinref part="GREEN_TAIL" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="TAIL_MOSFETS" gate="G$2" pin="D"/>
-<pinref part="RED_TAIL" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="GREEN_TAIL" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="66.04" x2="365.76" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="104.14" x2="365.76" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PC0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
 <junction x="101.6" y="68.58"/>
-<label x="104.14" y="71.12" size="1.778" layer="95"/>
+<label x="104.14" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GREEN_TAIL_1" gate="G$1" pin="2"/>
@@ -4695,18 +4647,9 @@ disable ADC</text>
 </net>
 <net name="PC1" class="0">
 <segment>
-<wire x1="381" y1="114.3" x2="381" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="381" y1="109.22" x2="353.06" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="109.22" x2="353.06" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="111.76" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="111.76" x2="340.36" y2="111.76" width="0.1524" layer="91"/>
-<junction x="353.06" y="111.76"/>
-<junction x="340.36" y="111.76"/>
-<label x="332.74" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
 <junction x="101.6" y="66.04"/>
+<label x="104.14" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GREEN_TAIL_2" gate="G$1" pin="2"/>
@@ -4716,16 +4659,9 @@ disable ADC</text>
 </net>
 <net name="PC2" class="0">
 <segment>
-<wire x1="353.06" y1="99.06" x2="353.06" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="381" y1="104.14" x2="381" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="381" y1="99.06" x2="353.06" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="101.6" x2="340.36" y2="101.6" width="0.1524" layer="91"/>
-<junction x="340.36" y="101.6"/>
-<label x="332.74" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2)"/>
 <junction x="101.6" y="63.5"/>
+<label x="104.14" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GREEN_TAIL_3" gate="G$1" pin="2"/>

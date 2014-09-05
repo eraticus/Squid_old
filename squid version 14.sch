@@ -3869,9 +3869,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
 <part name="RED_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
