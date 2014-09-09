@@ -40,7 +40,7 @@ ISR(WDT_vect)
 {
   counter++;
 
-  if (!(counter%4)) // mod controls how fast this goes.
+  if (!(counter%2)) // mod controls how fast this goes.
   {
     //segment++;
 
@@ -49,14 +49,21 @@ ISR(WDT_vect)
 
   }
 
-  if (!(counter%6))
+  if (!(counter%4))
   {
+    /*
     tail=tail + tail_delta;
 
     if (tail == 5) 
       tail_delta = -1; 
     if (tail == 0)
       tail_delta = 1;
+      */
+      tail = tail+1;
+      if (tail>2)
+      {
+       tail = 0; 
+      }
   }
 
 
@@ -167,7 +174,8 @@ void loop()
     //PORTC &= ~7; // blank out PORTC which is all the tail lights
     //PORTC |= 1<<(tail/2); //why am I doing it this way!!
 
-    int x = tail/2; //set x to represent the tail light which should be turned on
+    //int x = tail/2; //set x to represent the tail light which should be turned on
+    int x = tail;
     PORTD &= ~(224); // turn off top three bits, which are connected to the red tail lights
     PORTC &= ~(7); // turn off top three bits, which are connected to the green tail lights
 
