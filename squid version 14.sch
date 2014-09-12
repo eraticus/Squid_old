@@ -3798,15 +3798,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
-<part name="R_PROG" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="25"/>
+<part name="R_PROG" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="4.7K"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="LED" library="led" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="RLED" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="300"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
 <part name="B1" library="Keystone" deviceset="COIN_CELL_BATTERY" device="JST"/>
 <part name="U$6" library="ERIC" deviceset="VBAT" device=""/>
-<part name="U$8" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="U$10" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="CHARGE_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="GND_BOT" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$11" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="U2" library="ERIC" deviceset="MCP73832" device=""/>
@@ -3854,9 +3854,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$16" library="ERIC" deviceset="VBAT" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="CHARGE_BOTTOM" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="U$17" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="GND_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LEFT1" library="ERIC" deviceset="MOSFET_N_DUAL" device=""/>
+<part name="CHARGING" library="ERIC" deviceset="MOSFET_N_DUAL" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="RCHARGE" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="300"/>
 <part name="PULLDOWN" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
@@ -3869,9 +3869,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
-<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
-<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
+<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
+<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
 <part name="RED_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
@@ -3929,8 +3929,8 @@ disable ADC</text>
 <attribute name="NAME" x="114.3" y="133.35" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="U$6" gate="G$1" x="106.68" y="142.24"/>
-<instance part="U$8" gate="G$1" x="15.24" y="96.52" rot="R270"/>
-<instance part="U$10" gate="G$1" x="30.48" y="96.52" rot="R270"/>
+<instance part="CHARGE_TOP" gate="G$1" x="15.24" y="96.52" rot="R270"/>
+<instance part="GND_BOT" gate="G$1" x="30.48" y="96.52" rot="R270"/>
 <instance part="GND14" gate="1" x="30.48" y="104.14" rot="R180"/>
 <instance part="U$11" gate="G$1" x="15.24" y="101.6"/>
 <instance part="U2" gate="G$1" x="78.74" y="147.32"/>
@@ -3982,9 +3982,9 @@ disable ADC</text>
 <instance part="U$16" gate="G$1" x="276.86" y="177.8"/>
 <instance part="GND10" gate="1" x="276.86" y="142.24"/>
 <instance part="CHARGE_BOTTOM" gate="G$1" x="2.54" y="96.52" rot="R270"/>
-<instance part="U$17" gate="G$1" x="40.64" y="96.52" rot="R270"/>
+<instance part="GND_TOP" gate="G$1" x="40.64" y="96.52" rot="R270"/>
 <instance part="GND12" gate="1" x="40.64" y="104.14" rot="R180"/>
-<instance part="LEFT1" gate="G$1" x="147.32" y="180.34"/>
+<instance part="CHARGING" gate="G$1" x="147.32" y="180.34"/>
 <instance part="GND13" gate="1" x="149.86" y="172.72"/>
 <instance part="RCHARGE" gate="G$1" x="134.62" y="177.8"/>
 <instance part="PULLDOWN" gate="G$1" x="142.24" y="170.18" rot="R90"/>
@@ -4076,7 +4076,7 @@ disable ADC</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
+<pinref part="GND_BOT" gate="G$1" pin="P$1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4089,11 +4089,11 @@ disable ADC</text>
 <wire x1="276.86" y1="149.86" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$17" gate="G$1" pin="P$1"/>
+<pinref part="GND_TOP" gate="G$1" pin="P$1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LEFT1" gate="G$1" pin="S"/>
+<pinref part="CHARGING" gate="G$1" pin="S"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4130,7 +4130,7 @@ disable ADC</text>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="LEFT1" gate="G$1" pin="D"/>
+<pinref part="CHARGING" gate="G$1" pin="D"/>
 <wire x1="149.86" y1="185.42" x2="149.86" y2="195.58" width="0.1524" layer="91"/>
 <junction x="149.86" y="195.58"/>
 <label x="154.94" y="195.58" size="1.778" layer="95"/>
@@ -4421,7 +4421,7 @@ disable ADC</text>
 </net>
 <net name="VCHARGE" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="CHARGE_TOP" gate="G$1" pin="P$1"/>
 <pinref part="U$11" gate="G$1" pin="VCHARGE"/>
 </segment>
 <segment>
@@ -4700,7 +4700,7 @@ disable ADC</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LEFT1" gate="G$1" pin="G"/>
+<pinref part="CHARGING" gate="G$1" pin="G"/>
 <pinref part="RCHARGE" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="177.8" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="PULLDOWN" gate="G$1" pin="2"/>

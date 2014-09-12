@@ -3843,8 +3843,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="RIGHT_RED_3" library="ERIC" deviceset="LED" device="PLCC2"/>
 <part name="RIGHT_RED_4" library="ERIC" deviceset="LED" device="PLCC2"/>
 <part name="RIGHT_RED_0" library="ERIC" deviceset="LED" device="PLCC2"/>
-<part name="CENTER_BOTTOM" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="CENTER_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device="" value=""/>
+<part name="SENSOR_T" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="SENSOR_B" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device="" value=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$14" library="ERIC" deviceset="VBAT" device=""/>
 <part name="U$15" library="ERIC" deviceset="VBAT" device=""/>
@@ -3869,9 +3869,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="43"/>
 <part name="RED_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
@@ -3902,7 +3902,7 @@ disable ADC</text>
 <text x="281.94" y="175.26" size="1.778" layer="91">connect to water sensor port</text>
 <text x="109.22" y="190.5" size="1.778" layer="91">RESET LOW when charging</text>
 <text x="330.2" y="167.64" size="1.778" layer="94">Use a Resistor Array instead of discrete chips</text>
-<text x="-7.62" y="160.02" size="1.778" layer="94">Schottky diode or a jumper</text>
+<text x="218.44" y="187.96" size="1.778" layer="94">unconnected. Only for physical support</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="43.18"/>
@@ -3969,8 +3969,8 @@ disable ADC</text>
 <instance part="RIGHT_RED_3" gate="G$1" x="307.34" y="93.98" rot="R90"/>
 <instance part="RIGHT_RED_4" gate="G$1" x="307.34" y="83.82" rot="R90"/>
 <instance part="RIGHT_RED_0" gate="G$1" x="307.34" y="124.46" rot="R90"/>
-<instance part="CENTER_BOTTOM" gate="G$1" x="254" y="162.56" rot="R270"/>
-<instance part="CENTER_TOP" gate="G$1" x="241.3" y="167.64" rot="R180"/>
+<instance part="SENSOR_T" gate="G$1" x="248.92" y="182.88" rot="R180"/>
+<instance part="SENSOR_B" gate="G$1" x="248.92" y="167.64" rot="R180"/>
 <instance part="INVERTER" gate="G$2" x="172.72" y="15.24"/>
 <instance part="INVERTER" gate="G$3" x="170.18" y="20.32"/>
 <instance part="GND11" gate="1" x="170.18" y="0"/>
@@ -4709,16 +4709,6 @@ disable ADC</text>
 <junction x="142.24" y="177.8"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
-<wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
-<wire x1="246.38" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-<junction x="254" y="167.64"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="RCHARGE" gate="G$1" pin="1"/>
@@ -4781,6 +4771,13 @@ disable ADC</text>
 <pinref part="U$13" gate="G$1" pin="RED"/>
 <pinref part="RED_TAIL_3" gate="G$1" pin="1"/>
 <wire x1="398.78" y1="144.78" x2="398.78" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="SENSOR_B" gate="G$1" pin="P$1"/>
+<wire x1="254" y1="167.64" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -3864,7 +3864,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="DIODE" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="U$3" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="U$7" library="ERIC" deviceset="LED_RED_GREEN_CC" device=""/>
-<part name="U$9" library="ERIC" deviceset="LED_RED_GREEN_CC" device=""/>
+<part name="CENTER" library="ERIC" deviceset="LED_RED_GREEN_CC" device=""/>
 <part name="U$13" library="ERIC" deviceset="LED_RED_GREEN_CC" device=""/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
@@ -3901,6 +3901,8 @@ disable ADC</text>
 <text x="231.14" y="172.72" size="1.778" layer="91">connect to center brass tube</text>
 <text x="281.94" y="175.26" size="1.778" layer="91">connect to water sensor port</text>
 <text x="109.22" y="190.5" size="1.778" layer="91">RESET LOW when charging</text>
+<text x="330.2" y="167.64" size="1.778" layer="94">Use a Resistor Array instead of discrete chips</text>
+<text x="187.96" y="160.02" size="1.778" layer="94">unconnected. Only for physical support</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="43.18"/>
@@ -3990,7 +3992,7 @@ disable ADC</text>
 <instance part="DIODE" gate="G$1" x="35.56" y="160.02" rot="R90"/>
 <instance part="U$3" gate="G$1" x="35.56" y="165.1"/>
 <instance part="U$7" gate="G$1" x="335.28" y="142.24" rot="R270"/>
-<instance part="U$9" gate="G$1" x="363.22" y="142.24" rot="R270"/>
+<instance part="CENTER" gate="G$1" x="363.22" y="142.24" rot="R270"/>
 <instance part="U$13" gate="G$1" x="391.16" y="142.24" rot="R270"/>
 <instance part="GND17" gate="1" x="335.28" y="134.62"/>
 <instance part="GND18" gate="1" x="363.22" y="134.62"/>
@@ -4104,7 +4106,7 @@ disable ADC</text>
 <wire x1="335.28" y1="137.16" x2="335.28" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="C"/>
+<pinref part="CENTER" gate="G$1" pin="C"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="363.22" y1="137.16" x2="363.22" y2="139.7" width="0.1524" layer="91"/>
 </segment>
@@ -4712,9 +4714,6 @@ disable ADC</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
 <wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="CENTER_TOP" gate="G$1" pin="P$1"/>
-<wire x1="246.38" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-<junction x="254" y="167.64"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -4748,7 +4747,7 @@ disable ADC</text>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="GREEN"/>
+<pinref part="CENTER" gate="G$1" pin="GREEN"/>
 <pinref part="GREEN_TAIL_2" gate="G$1" pin="1"/>
 <wire x1="355.6" y1="144.78" x2="355.6" y2="142.24" width="0.1524" layer="91"/>
 </segment>
@@ -4769,7 +4768,7 @@ disable ADC</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="RED"/>
+<pinref part="CENTER" gate="G$1" pin="RED"/>
 <pinref part="RED_TAIL_2" gate="G$1" pin="1"/>
 <wire x1="370.84" y1="144.78" x2="370.84" y2="142.24" width="0.1524" layer="91"/>
 </segment>

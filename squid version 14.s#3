@@ -3805,8 +3805,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
 <part name="B1" library="Keystone" deviceset="COIN_CELL_BATTERY" device="JST"/>
 <part name="U$6" library="ERIC" deviceset="VBAT" device=""/>
-<part name="U$8" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="U$10" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="CHARGE_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="GND_BOT" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$11" library="ERIC" deviceset="VCHARGE" device=""/>
 <part name="U2" library="ERIC" deviceset="MCP73832" device=""/>
@@ -3843,8 +3843,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="RIGHT_RED_3" library="ERIC" deviceset="LED" device="PLCC2"/>
 <part name="RIGHT_RED_4" library="ERIC" deviceset="LED" device="PLCC2"/>
 <part name="RIGHT_RED_0" library="ERIC" deviceset="LED" device="PLCC2"/>
-<part name="CENTER_BOTTOM" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="CENTER_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device="" value=""/>
+<part name="SENSOR_T" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="SENSOR_B" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device="" value=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$14" library="ERIC" deviceset="VBAT" device=""/>
 <part name="U$15" library="ERIC" deviceset="VBAT" device=""/>
@@ -3854,7 +3854,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$16" library="ERIC" deviceset="VBAT" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="CHARGE_BOTTOM" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
-<part name="U$17" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
+<part name="GND_TOP" library="Keystone" deviceset="FEMALE_QUICK_FIT_TERMINAL" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LEFT1" library="ERIC" deviceset="MOSFET_N_DUAL" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
@@ -3869,9 +3869,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="GREEN_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
+<part name="GREEN_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
+<part name="GREEN_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="45"/>
 <part name="RED_TAIL_1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="RED_TAIL_3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
@@ -3902,7 +3902,7 @@ disable ADC</text>
 <text x="281.94" y="175.26" size="1.778" layer="91">connect to water sensor port</text>
 <text x="109.22" y="190.5" size="1.778" layer="91">RESET LOW when charging</text>
 <text x="330.2" y="167.64" size="1.778" layer="94">Use a Resistor Array instead of discrete chips</text>
-<text x="187.96" y="160.02" size="1.778" layer="94">unconnected. Only for physical support</text>
+<text x="218.44" y="187.96" size="1.778" layer="94">unconnected. Only for physical support</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="43.18"/>
@@ -3929,8 +3929,8 @@ disable ADC</text>
 <attribute name="NAME" x="114.3" y="133.35" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="U$6" gate="G$1" x="106.68" y="142.24"/>
-<instance part="U$8" gate="G$1" x="15.24" y="96.52" rot="R270"/>
-<instance part="U$10" gate="G$1" x="30.48" y="96.52" rot="R270"/>
+<instance part="CHARGE_TOP" gate="G$1" x="15.24" y="96.52" rot="R270"/>
+<instance part="GND_BOT" gate="G$1" x="30.48" y="96.52" rot="R270"/>
 <instance part="GND14" gate="1" x="30.48" y="104.14" rot="R180"/>
 <instance part="U$11" gate="G$1" x="15.24" y="101.6"/>
 <instance part="U2" gate="G$1" x="78.74" y="147.32"/>
@@ -3969,8 +3969,8 @@ disable ADC</text>
 <instance part="RIGHT_RED_3" gate="G$1" x="307.34" y="93.98" rot="R90"/>
 <instance part="RIGHT_RED_4" gate="G$1" x="307.34" y="83.82" rot="R90"/>
 <instance part="RIGHT_RED_0" gate="G$1" x="307.34" y="124.46" rot="R90"/>
-<instance part="CENTER_BOTTOM" gate="G$1" x="254" y="162.56" rot="R270"/>
-<instance part="CENTER_TOP" gate="G$1" x="241.3" y="167.64" rot="R180"/>
+<instance part="SENSOR_T" gate="G$1" x="248.92" y="182.88" rot="R180"/>
+<instance part="SENSOR_B" gate="G$1" x="248.92" y="167.64" rot="R180"/>
 <instance part="INVERTER" gate="G$2" x="172.72" y="15.24"/>
 <instance part="INVERTER" gate="G$3" x="170.18" y="20.32"/>
 <instance part="GND11" gate="1" x="170.18" y="0"/>
@@ -3982,7 +3982,7 @@ disable ADC</text>
 <instance part="U$16" gate="G$1" x="276.86" y="177.8"/>
 <instance part="GND10" gate="1" x="276.86" y="142.24"/>
 <instance part="CHARGE_BOTTOM" gate="G$1" x="2.54" y="96.52" rot="R270"/>
-<instance part="U$17" gate="G$1" x="40.64" y="96.52" rot="R270"/>
+<instance part="GND_TOP" gate="G$1" x="40.64" y="96.52" rot="R270"/>
 <instance part="GND12" gate="1" x="40.64" y="104.14" rot="R180"/>
 <instance part="LEFT1" gate="G$1" x="147.32" y="180.34"/>
 <instance part="GND13" gate="1" x="149.86" y="172.72"/>
@@ -4076,7 +4076,7 @@ disable ADC</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
+<pinref part="GND_BOT" gate="G$1" pin="P$1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4089,7 +4089,7 @@ disable ADC</text>
 <wire x1="276.86" y1="149.86" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$17" gate="G$1" pin="P$1"/>
+<pinref part="GND_TOP" gate="G$1" pin="P$1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4421,7 +4421,7 @@ disable ADC</text>
 </net>
 <net name="VCHARGE" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="CHARGE_TOP" gate="G$1" pin="P$1"/>
 <pinref part="U$11" gate="G$1" pin="VCHARGE"/>
 </segment>
 <segment>
@@ -4709,13 +4709,6 @@ disable ADC</text>
 <junction x="142.24" y="177.8"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="CENTER_BOTTOM" gate="G$1" pin="P$1"/>
-<wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="RCHARGE" gate="G$1" pin="1"/>
@@ -4778,6 +4771,13 @@ disable ADC</text>
 <pinref part="U$13" gate="G$1" pin="RED"/>
 <pinref part="RED_TAIL_3" gate="G$1" pin="1"/>
 <wire x1="398.78" y1="144.78" x2="398.78" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="SENSOR_B" gate="G$1" pin="P$1"/>
+<wire x1="254" y1="167.64" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
